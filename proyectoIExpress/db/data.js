@@ -30,7 +30,7 @@ const data = {
         {
             nombre: "Macbook Pro",
             descripcion: "Macbook Pro 2019, excelente estado",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            imagen: "/images/products/img-macbook-pro-2019.jpg",
             comentarios: [
                 {
                     usuario: "Serenita45",
@@ -70,7 +70,7 @@ const data = {
         {
             nombre: "Samsung Smart TV",
             descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            imagen: "/images/products/img-macbook-pro-2019.jpg",
             comentarios: [
                 {
                     usuario: "AgustinP",
@@ -108,18 +108,18 @@ const data = {
 
         },
         {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            nombre: "Iphone 15 Pro Max",
+            descripcion: "Iphone 15 Pro Max en perfecto estado, mas potencia, mejor camara y tecnologia de ultimo nivel" ,
+            imagen: "/images/products/iphone-15-pro-128gb.jpg",
             comentarios: [
                 {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    usuario: "Santino_perez99",
+                    texto: "¡Se ve tentador! increible las tecnologias nuevas que salen cada dia",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
+                    usuario: "agustinahernandez",
+                    texto: "Compre uno la semana pasada y es increible la variedad de cosas que se pueden hacer, ¡totalmente recomendado! ",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -128,18 +128,18 @@ const data = {
 
         },
         {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            nombre: "Apple Vision Pro",
+            descripcion: "Viví el futuro hoy con Apple Vision Pro: realidad mixta, pantallas envolventes y control con tus ojos, manos y voz. Envios gratis a todo el pais",
+            imagen: "/images/products/download",
             comentarios: [
                 {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    usuario: "Jorge1988",
+                    texto: "Pesimo servicio, me llego dos meses despues y no me funciona del todo bien",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
+                    usuario: "MartinGonzales01",
+                    texto: "Interesante el producto, pero un precio muy elevado para la utilidad que tiene",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -148,18 +148,18 @@ const data = {
 
         },
         {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            nombre: "Philips Airfryer XL",
+            descripcion: "Transformá tu cocina con una airfryer: cociná rico, rápido y sin aceite, todo el sabor, cero culpa. Envios a todo el pais, entre 5 y 7 dias",
+            imagen: "/images/products-images.jpg",
             comentarios: [
                 {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    usuario: "Maria Gonzales",
+                    texto: "Adquiri una hace una semana y me cambio la vida y la de mis hijos, excellente producto",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
+                    usuario: "Juan_rugby08",
+                    texto: "Estoy cuidando mi alimentacion y esta a sido mi mejor compra, comiendo saludable y con el mismo sabor",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -168,18 +168,18 @@ const data = {
 
         },
         {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            nombre: "TM6-Thermomix",
+            descripcion: "Simplificá tu vida con Thermomix: cocina inteligente, todo en uno y sin esfuerzo",
+            imagen: "/images/products/thermomix.jpg",
             comentarios: [
                 {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    usuario: "Inesfish",
+                    texto: "Trabajo todo el dia y siempre llego a casa tarde y cansada, este producto me cambio la vida",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
+                    usuario: "Pedro_30",
+                    texto: "Se me rompio a las 2 semanas, le tenia mayor expectativa",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -188,18 +188,18 @@ const data = {
 
         },
         {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            nombre: "Licuadora De Mesa Inox 800W",
+            descripcion: "Prepará licuados, sopas y más en segundos con una licuadora potente y práctica",
+            imagen: "/images/products/img-licuadora-800W.jpg",
             comentarios: [
                 {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    usuario: "Mariano_Fernandez",
+                    texto: "Me funciono bien, ¡gran precio calidad!",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
+                    usuario: "MaruCocina",
+                    texto: "Mucho ruido al licuar, puse unos hielos y sentia que se rompia",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -214,4 +214,4 @@ const data = {
     ]
 }
 
-module.exports = data
+module.exports = data;
