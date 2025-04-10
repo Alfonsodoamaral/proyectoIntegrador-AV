@@ -39,7 +39,7 @@ const data = {
                 },
                 {
                     usuario: "Tecnoboy2500",
-                    texto: "Exceelnte computadora para programar y jugar videojuegos",
+                    texto: "Excelnte computadora para programar y jugar videojuegos",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
@@ -50,7 +50,7 @@ const data = {
         {
             nombre: "Samsung Galaxy",
             descripcion: "Samsung galaxy en oferta, ultimos productos",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            imagen: "/images/prodcuts/img-samsung-galaxy.jpg",
             comentarios: [
                 {
                     usuario: "Vicente2948",
@@ -70,7 +70,7 @@ const data = {
         {
             nombre: "Samsung Smart TV",
             descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/products/img-macbook-pro-2019.jpg",
+            imagen: "/images/products/img-tv-samsung-smart.jpg",
             comentarios: [
                 {
                     usuario: "AgustinP",
@@ -90,7 +90,7 @@ const data = {
         {
             nombre: "Airpods Pro",
             descripcion: "Nuevos Airpods pro con cancelacion de ruido ",
-            imagen: "/images/prodcuts/img-macbook-pro-2019.jpg",
+            imagen: "/images/prodcuts/img-airpods-pro.jpg",
             comentarios: [
                 {
                     usuario: "Agustinuaia",
@@ -130,7 +130,7 @@ const data = {
         {
             nombre: "Apple Vision Pro",
             descripcion: "Viví el futuro hoy con Apple Vision Pro: realidad mixta, pantallas envolventes y control con tus ojos, manos y voz. Envios gratis a todo el pais",
-            imagen: "/images/products/download",
+            imagen: "/images/products/vision-pro",
             comentarios: [
                 {
                     usuario: "Jorge1988",

@@ -8,5 +8,11 @@ const indexController = {
         })
     }
 }
+const searchController = {
+    index: function(req, res){
+        res.render("search-result")
+    }
+}
 
 module.exports = indexController
+module.exports = searchController

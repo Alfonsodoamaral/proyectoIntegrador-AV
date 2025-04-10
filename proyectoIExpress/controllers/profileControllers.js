@@ -13,4 +13,19 @@ const profileController = {
 
 }
 
+const loginController = {
+    index: function(req, res){
+        res.render("login")
+    }
+}
+
+const registerController = {
+    index: function(req, res){
+        res.render("register")
+    }
+}
+
+
 module.exports = profileController
+module.exports = registerController
+module.exports = loginController

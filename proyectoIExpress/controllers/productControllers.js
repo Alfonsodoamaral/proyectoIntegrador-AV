@@ -17,4 +17,11 @@ const productController = {
 }
 }
 
+const productAddController = {
+    index: function(req, res){
+        res.render("product-add")
+    }
+}
+
 module.exports = productController
+module.exports = productAddController
