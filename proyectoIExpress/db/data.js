@@ -9,19 +9,25 @@ const data = {
     },
     productos: [
         {
-            nombre: "Cafetera Moulinex",
-            descripcion: "Cafetera electrica ultimo modelo",
-            imagen: "/images/prodcuts/img-cafetera-moulinex.jpg",
+            nombre: "Apple Airpods Max",
+            descripcion: "Cancelación de ruido líder, comodidad de lujo y la magia Apple en cada nota.",
+            imagen: "/images/products/img-airpods-pro-max.jpg",
             comentarios: [
                 {
                     usuario: "Alfonso123",
-                    texto: "Muy buena cafetera, el cafe sale riquisimo y rapido",
+                    texto: "Increible para mis actividades de gimnasia, muy practicos y faciles de usar",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "Germannnnnn",
-                    texto: "Excelente producto, bueno, bonito y barato",
+                    usuario: "Germannnnn",
+                    texto: "Excelente producto, bueno, bonito y grandioso en precio calidad",
                     fotoDePerfil: "/images/users/deafult-image.png"
+                },
+                {
+                    usuario: "Sebaperez",
+                    texto: "Me esperaba mucho menos, de las mejores compras que he hecho",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+
                 }
 
             ]
@@ -41,6 +47,11 @@ const data = {
                     usuario: "Tecnoboy2500",
                     texto: "Excelnte computadora para programar y jugar videojuegos",
                     fotoDePerfil: "/images/users/deafult-image.png"
+                },
+                {
+                    usuario: "MarcosProgramacion",
+                    texto: "Soy programador y me sirvio muchisimo",
+                    fotoDePerfil: "/images/users/deafult-image.png"
                 }
 
             ]
@@ -48,39 +59,25 @@ const data = {
 
         },
         {
-            nombre: "Samsung Galaxy",
-            descripcion: "Samsung galaxy en oferta, ultimos productos",
-            imagen: "/images/prodcuts/img-samsung-galaxy.jpg",
+            nombre: "Apple Watch",
+            descripcion: "Tu salud, notificaciones y pagos en la muñeca, con estilo y la precisión de Apple",
+            imagen: "/images/products/img-apple-watch.jpg",
             comentarios: [
                 {
                     usuario: "Vicente2948",
-                    texto: "¡Gran celular, viene con todo y mas!",
+                    texto: "¡Todo lo que nececitaba para el dia a dia!",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
                     usuario: "Saperoni2222",
-                    texto: "Estoy facinado con mi nuevo celular, muy buena compra",
-                    fotoDePerfil: "/images/users/deafult-image.png"
-                }
-
-            ]
-
-
-        },
-        {
-            nombre: "Samsung Smart TV",
-            descripcion: "Llego la nueva samsung smart tv, hasta  6 cuotas sin interes y con envio gratis",
-            imagen: "/images/products/img-tv-samsung-smart.jpg",
-            comentarios: [
-                {
-                    usuario: "AgustinP",
-                    texto: "¡Se ve increible! Gran combinacion de colores y formatos",
+                    texto: "Estoy facinado, muy util. Excellente compra",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MartaV",
-                    texto: "Muy malo el televisor, lo estoy devolviendo, ¡No lo compres!",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    usuario: "MateoJames33",
+                    texto: "Muy caro a mi parecer, solo sirve para el deporte",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+
                 }
 
             ]
@@ -88,19 +85,50 @@ const data = {
 
         },
         {
-            nombre: "Airpods Pro",
-            descripcion: "Nuevos Airpods pro con cancelacion de ruido ",
-            imagen: "/images/prodcuts/img-airpods-pro.jpg",
+            nombre: "Modelo 3D Apple Ipad 2022",
+            descripcion: "antalla vibrante y lápiz de precisión para crear, estudiar y trabajar donde quieras",
+            imagen: "/images/products/img-apple-ipad-2022.jpg",
+            comentarios: [
+                {
+                    usuario: "AgustinP",
+                    texto: "¡Se ve increible! Me sirve para trabajar en cualquier lado",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+                },
+                {
+                    usuario: "MartaV",
+                    texto: "Muy caro y no de buena calidad, lo estoy devolviendo, ¡No lo compres!",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+                },
+                {
+                    usuario: "AgusVerdes",
+                    texto: "¡Exactamente lo que estaba buscando! Basta de hojas, cuidemos el planeta",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+                },
+
+            ]
+
+
+        },
+        {
+            nombre: "Auirculares Apple Earpods",
+            descripcion: "sonido nítido, control en línea y ajuste cómodo. Calidad Apple al mejor precio.",
+            imagen: "/images/products/img-auriculares-earpods.jpg",
             comentarios: [
                 {
                     usuario: "Agustinuaia",
-                    texto: "Son buenisimos",
+                    texto: "Son buenisimos y no muy caros",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
                     usuario: "Martasa V",
                     texto: "Son un poco incomodos",
                     fotoDePerfil: "/images/users/deafult-image.png"
+                },
+                {
+                    usuario: "Valeria_Gonzi",
+                    texto: "Practicos y no se me pierden, justo lo que buscaba",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+
                 }
 
             ]
@@ -121,7 +149,13 @@ const data = {
                     usuario: "agustinahernandez",
                     texto: "Compre uno la semana pasada y es increible la variedad de cosas que se pueden hacer, ¡totalmente recomendado! ",
                     fotoDePerfil: "/images/users/deafult-image.png"
-                }
+                },
+                {
+                    usuario: "FacundoJ",
+                    texto: "Muy util y facil de usar",
+                    fotoDePerfil: "/images/users/deafult-image.png"
+
+                },
 
             ]
 
@@ -141,6 +175,11 @@ const data = {
                     usuario: "MartinGonzales01",
                     texto: "Interesante el producto, pero un precio muy elevado para la utilidad que tiene",
                     fotoDePerfil: "/images/users/deafult-image.png"
+                },
+                {
+                    usuario: "VicenteExperimentos",
+                    texto: "Es innovador, pero innecesario, le doy un 5 de 10",
+                    fotoDePerfil: "/images/users/deafult-image.png",
                 }
 
             ]
@@ -148,49 +187,63 @@ const data = {
 
         },
         {
-            nombre: "Philips Airfryer XL",
-            descripcion: "Transformá tu cocina con una airfryer: cociná rico, rápido y sin aceite, todo el sabor, cero culpa. Envios a todo el pais, entre 5 y 7 dias",
-            imagen: "/images/products-images.jpg",
+            nombre: "Apple Tv 4K",
+            descripcion: "Streaming ultrarrápido, imagen Dolby Vision y todo el universo Apple en un solo dispositivo.",
+            imagen: "/images/products/img-apple-TV-4K",
             comentarios: [
                 {
                     usuario: "Maria Gonzales",
-                    texto: "Adquiri una hace una semana y me cambio la vida y la de mis hijos, excellente producto",
+                    texto: "Multifuncional, la mejor experiencia para mi y mis hijos",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "Juan_rugby08",
-                    texto: "Estoy cuidando mi alimentacion y esta a sido mi mejor compra, comiendo saludable y con el mismo sabor",
+                    usuario: "Juan_02",
+                    texto: "Muy practico, excellente producto",
                     fotoDePerfil: "/images/users/deafult-image.png"
-                }
+                },
+                {
+                    usuario: "MatiasCarrete",
+                    texto: "Envio muy rapido y en perfecto estado. Gran compra.",
+                    fotoDePerfil: "images/users/deafult-image.png",
+
+                },
+
 
             ]
 
 
         },
         {
-            nombre: "TM6-Thermomix",
-            descripcion: "Simplificá tu vida con Thermomix: cocina inteligente, todo en uno y sin esfuerzo",
-            imagen: "/images/products/thermomix.jpg",
+            nombre: "Apple HomePod mini",
+            descripcion: "Sonido envolvente premium, Siri integrada y control total de tu casa con solo tu voz.",
+            imagen: "/images/products/img-apple-homePod-4K",
             comentarios: [
                 {
                     usuario: "Inesfish",
-                    texto: "Trabajo todo el dia y siempre llego a casa tarde y cansada, este producto me cambio la vida",
+                    texto: "Me genera siempre un gran ambiente en la casa, excellente producto",
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
                     usuario: "Pedro_30",
                     texto: "Se me rompio a las 2 semanas, le tenia mayor expectativa",
                     fotoDePerfil: "/images/users/deafult-image.png"
-                }
+                },
+                {
+                    usuario: "Sramirez",
+                    texto: "Comodo y util, ¡Este producto es genial!",
+                    fotoDePerfil: "",
+
+                },
+
 
             ]
 
 
         },
         {
-            nombre: "Licuadora De Mesa Inox 800W",
-            descripcion: "Prepará licuados, sopas y más en segundos con una licuadora potente y práctica",
-            imagen: "/images/products/img-licuadora-800W.jpg",
+            nombre: "AirTag",
+            descripcion: "Ponelo en llaves, bolso o bici y encontralos al instante con la red Buscar de Apple.",
+            imagen: "/images/products/img-AirTag.jpg",
             comentarios: [
                 {
                     usuario: "Mariano_Fernandez",
@@ -198,10 +251,16 @@ const data = {
                     fotoDePerfil: "/images/users/deafult-image.png"
                 },
                 {
-                    usuario: "MaruCocina",
-                    texto: "Mucho ruido al licuar, puse unos hielos y sentia que se rompia",
+                    usuario: "MaruuGonzales",
+                    texto: "Desde ahora que ya no pierdo mas nada, ¡Me hacia falta! ",
                     fotoDePerfil: "/images/users/deafult-image.png"
-                }
+                },
+                {
+                    usuario: "MatiasFernandez",
+                    texto: "Excellente producto",
+                    fotoDePerfil: "/images/users/deafult-image.png",
+
+                },
 
             ]
 
