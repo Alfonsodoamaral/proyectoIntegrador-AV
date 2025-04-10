@@ -17,7 +17,7 @@
 </head>
 <body>
 	<!-- Header -->
-	<%- include("./partials/header") %>
+	<%- include("./partials/headerNoLogeadoi") %>
 	<!-- /Header -->
 	
 	<!-- Banner -->
@@ -38,7 +38,7 @@
 				<section class="product-box">
 					<a href="/products/<%= i %>">
 						<figure class="product-box_image">
-							<img src="images/products/default-image.png" alt="cafetera moulinex">
+							<img src="<%= prodcutos[i].imagen" alt="<%= productos[i].nombre%>">
 						</figure>
 						<article class="product-box_data">
 							<h2><%= productos[i].nombre %></h2>

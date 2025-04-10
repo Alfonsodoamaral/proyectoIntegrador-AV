@@ -16,7 +16,7 @@
 </head>
 <body>
 	<!-- Header -->
-    <%- include("./partials/header") %>
+    <%- include("./partials/headerLogeado") %>
 	<!-- /Header -->
 
 	<!-- Datos del usuario -->
@@ -28,7 +28,7 @@
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
 					<h1 class="main-title">Nombre del usuario 
-						<a href="profile-edit.html">
+						<a href="<%= usuario.nombre %>">
 							<i class="fas fa-cog"></i>
 						</a>
 					</h1>
@@ -36,6 +36,7 @@
 				</div>
 				<div>
 					<ul class="">
+						<!-- Preguntar que va aca -->
 						<li>8 productos</li>
 						<li>200 seguidores</li>
 						<li>300 comentarios</li>
@@ -58,10 +59,10 @@
 					<section class="product-box">
 						<a href="/productos/ <% i %>">
 							<figure class="product-box_image">
-							<img src="<%=productos[i].imagen" alt="<%= productos[i].name">
+							<img src="<%=productos[i].imagen" alt="<%= productos[i].nombre">
 							</figure>
 							<article class="product-box_data">
-							<h2><%= prodcutos[i].nombre %></h2>
+							<h2><%= prodcutos[i].nomre %></h2>
 							<p><%= prodcutos[i].descripcion %></p>
 							<p><%= prodcutos[i].comentarios.length %></p>
 							</article>
