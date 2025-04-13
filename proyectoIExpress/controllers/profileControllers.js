@@ -6,7 +6,7 @@ const profileController = {
         let usuario = data.usuario
         res.render("profile", {
             usuario: usuario,
-            prodcutos: prodcutos
+            productos: productos
 
         })
     }
