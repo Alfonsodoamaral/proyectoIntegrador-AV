@@ -14,14 +14,11 @@ const productController = {
             comentario: producto.comentario
         })
        }
+    },
+    add_products: function(req, res){
+    res.render("product-add")
 }
 }
 
-const productAddController = {
-    index: function(req, res){
-        res.render("product-add")
-    }
-}
 
 module.exports = productController
-module.exports = productAddController

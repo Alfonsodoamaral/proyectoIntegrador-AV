@@ -18,7 +18,7 @@
 
 <body>
 	<!-- Header -->
-	<%- include("partials/headerNoLogeado") %>
+	<%- include("./partials/headerNoLogeadoi") %>
 	<!-- /Header -->
 
 	<!-- Novedades -->
@@ -33,21 +33,23 @@
 					<section class="product-box">
 						<a href="/products/<%= i %>">
 							<figure class="product-box_image">
-								<img src="<%= prodcutos[i].imagen" alt="<%= productos[i].nombre%>">
+								<img src="<%= productos[i].imagen %>" alt="<%= productos[i].nombre%>">
 							</figure>
 							<article class="product-box_data">
 								<h2><%= productos[i].nombre %></h2>
-								<p><%= productos[i].descripcion</p>
-								<p><%= prodcutos[i].comentarios.length</p>
+								<p><%= productos[i].descripcion %></p>
+								<p><%= productos[i].comentarios.length %></p>
 							</article>
 						</a>
 					</section>
 				<% } %>
 				</div>
+		</div>
+	</div>
 
 
 	<!-- footer -->
-	<%- include("partials/footer") %>
+	<%- include("./partials/footer") %>
 	<!-- /footer -->
 </body>
 

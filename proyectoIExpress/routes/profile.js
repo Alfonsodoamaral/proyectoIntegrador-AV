@@ -3,8 +3,8 @@ const route = express.Router()
 const profileControllers = require("../controllers/profileControllers")
 
 route.get("/profile", profileControllers.index)
-route.get("/register", registerControllersControllers.index)
-route.get("/login", loginControllers.index)
+route.get("/register", profileControllers.register)
+route.get("/login", profileControllers.login)
 
 
 
