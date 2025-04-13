@@ -86,7 +86,7 @@ const data = {
         },
         {
             nombre: "Modelo 3D Apple Ipad 2022",
-            descripcion: "antalla vibrante y lápiz de precisión para crear, estudiar y trabajar donde quieras",
+            descripcion: "Pantalla vibrante y lápiz de precisión para crear, estudiar y trabajar donde quieras",
             imagen: "/images/products/img-apple-ipad-2022.jpg",
             comentarios: [
                 {
