@@ -10,9 +10,10 @@
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="../css/app.css">
+	
 </head>
 <body>
 	<!-- Header -->
@@ -21,9 +22,9 @@
 	<!-- product detail -->
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title">Nombre del producto</h2> 
+			<h2 class="products-title"><%= nombre %></h2> 
 			<p class="product-detail-description">
-				<a href="product-add">Editar</a>
+				<a href="product/agregar">Editar</a>
 			</p>
 		</div>
 		<div class="product-detail">
@@ -38,11 +39,15 @@
 					<section class="comments">
                         <% for(i = 0; i < comentarios.length; i++){ %>
 						<article>
-							<img src="https://via.placeholder.com/35" alt="">
 							<div class="data">
 								<p class="user">
-								<strong> <a href="/profile"><%= comentarios[i].usuario %>
-                                    Nombre usuario: </a> </strong>
+								<strong> 
+									<a href="/users/perfil">
+									<img src="<%= comentarios[i].fotoDePerfil %>" alt="">
+									<%= comentarios[i].usuario %>
+                                     </a> 
+								</strong>
+								
 									<%= comentarios[i].texto %>
 								</p>
 							</div>

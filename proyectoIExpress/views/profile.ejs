@@ -10,9 +10,10 @@
 			<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="../css/app.css">
+	
 </head>
 <body>
 	<!-- Header -->
@@ -27,7 +28,7 @@
 			</div>
 			<div class="data-container col-6">
 				<div class="d-flex align-items-center ">
-					<h1 class="main-title">Nombre del usuario 
+					<h1 class="main-title"><%= usuario.nombre %>
 						<a href="<%= usuario.nombre %>">
 							<i class="fas fa-cog"></i>
 						</a>
@@ -37,6 +38,7 @@
 				<div>
 					<ul class="">
 						<!-- Preguntar que va aca -->
+						 <li><%=usuario.email %></li>
 						<li>8 productos</li>
 						<li>200 seguidores</li>
 						<li>300 comentarios</li>

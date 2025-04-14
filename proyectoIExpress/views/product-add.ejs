@@ -11,9 +11,10 @@
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="./css/app.css">
+	<link rel="stylesheet" href="../css/app.css">
+	
 </head>
 
 <body>
@@ -28,20 +29,23 @@
 				<h2 class="products-title">Agregar productos</h2>
 			</div>
 			<!-- Show the "ultimos" products -->
-			<h2 class="col-12"> 
-                <form action="/products" method="GET">
-                    <label for="image">Imagen</label>
-                    <input type="file" id="image" name="image">
-
-                    <label for="NDP">Nombre de producto: </label>
-                    <input type="texto" id="NDP" name="NDP">
-
-                    <label for="DDP">Descripcion del Producto</label>
-                    <input type="text" id="DDP" name="DDP">
-
-                    <button type="submit">Agregar Producto</button>
-                </form>
-			</h2>
+			 <section>
+				<h2 class="col-12"> 
+					<form action="/users/perfil" method="GET">
+						<label for="image">Imagen</label>
+						<input type="file" id="image" name="image">
+	
+						<label for="NDP">Nombre de producto: </label>
+						<input type="texto" id="NDP" name="NDP">
+	
+						<label for="DDP">Descripcion del Producto</label>
+						<input type="text" id="DDP" name="DDP">
+	
+						<button type="submit">Agregar Producto</button>
+					</form>
+				</h2>
+			 </section>
+			
 		</div>
 	</div>
 

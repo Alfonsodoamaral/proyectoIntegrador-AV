@@ -8,7 +8,7 @@ const indexController = {
         })
     },
     search_results: function(req, res){
-        res.render("search-result")
+        res.render("search-result", {productos: data.productos})
     }
 }
 

@@ -1,6 +1,8 @@
 /*====== Fonts ======*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=National+Park:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
 
 /*====== Variables ======*/
 :root {
@@ -10,7 +12,9 @@
   --gray: #666666;
   --light-gray: #ebebeb;
   --green: #39b54a;
-  --base-font-family: 'Roboto', sans-serif
+  --base-font-family: 'Winky Rough', sans-serif;
+  --title-font-family: 'Playfair Display', sans-serif
+
 }
 
 
@@ -31,6 +35,13 @@ body {
   font-weight: 300;
   background-color: var(--light-gray);
 }
+
+h1, h2, h3, h4, h5{
+  font-family: var(--title-font-family);
+
+}
+
+
 
 ul,
 ol {
@@ -66,7 +77,7 @@ hr {
 
 
 /*====== Main Header ======*/
-.main-header {
+/* .main-header {
   padding: 15px 0;
   background-color: var(--yellow);
 }
@@ -111,7 +122,7 @@ hr {
 
 
 /*====== Main Navbar ======*/
-.btn-toggle-navbar {
+/* .btn-toggle-navbar {
   background-color: var(--dark-blue);
   color: #ffffff;
   font-size: 1.5em;
@@ -151,6 +162,104 @@ hr {
 }
 
 
+
+/*====== Banner ======*/
+/* .banner {
+  background-image: url(/images/img-home-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100px;
+}   */
+
+.main-header {
+  padding: 15px 0;
+  background-color: gray; 
+}
+
+.main-header_home-link,
+.main-header_credit-link {
+  display: block;
+}
+
+.main-header_credit-link {
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  color: #FFFFFF; 
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-form_input {
+  border: solid 1px #D3D3D3; 
+  display: block;
+  width: 100%;
+  padding: 7px 35px 7px 7px;
+  border-radius: 3px;
+  height: 40px;
+  font-size: 1.5em;
+  color: #000000; 
+  background-color: #F5F5F5; 
+}
+
+.search-form_button {
+  position: absolute;
+  right: 2px;
+  height: 60%;
+  background-color: #FFFFFF; 
+  border: none;
+  border-left: solid 1px #D3D3D3; 
+  color: #000000; 
+  cursor: pointer;
+}
+
+/*====== Main Navbar ======*/
+.btn-toggle-navbar {
+  background-color: #000000; 
+  color: #FFFFFF; 
+  font-size: 1.5em;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 15px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.main-navbar {
+  margin-top: 20px;
+  display: none;
+}
+
+.left-navbar,
+.right-navbar {
+  font-size: 1.5em;
+  color: white; 
+}
+
+.logout {
+  background: transparent;
+  border: 0px;
+  cursor: pointer;
+  font-size: 1em;
+  color: white; 
+}
+
+.logout:hover {
+  color: #007AFF; 
+}
+
+.left-navbar a,
+.right-navbar a {
+  display: block;
+  padding: 5px 0;
+  border-bottom: solid 1px #D3D3D3; 
+  color: white; 
+}
 
 /*====== Banner ======*/
 .banner {

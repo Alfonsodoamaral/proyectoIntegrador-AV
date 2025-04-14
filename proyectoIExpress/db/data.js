@@ -4,7 +4,7 @@ const data = {
         email: "grodirguez@gmail.com",
         usuario: "grodriguez",
         contrasenia: "password",
-        fotoDePerfil: "/images/user/default-image.png"
+        fotoDePerfil: "/images/users/default-image.png"
 
     },
     productos: [
@@ -164,7 +164,7 @@ const data = {
         {
             nombre: "Apple Vision Pro",
             descripcion: "Viví el futuro hoy con Apple Vision Pro: realidad mixta, pantallas envolventes y control con tus ojos, manos y voz. Envios gratis a todo el pais",
-            imagen: "/images/products/vision-pro",
+            imagen: "/images/products/vision-pro.jpg",
             comentarios: [
                 {
                     usuario: "Jorge1988",
@@ -189,7 +189,7 @@ const data = {
         {
             nombre: "Apple Tv 4K",
             descripcion: "Streaming ultrarrápido, imagen Dolby Vision y todo el universo Apple en un solo dispositivo.",
-            imagen: "/images/products/img-apple-TV-4K",
+            imagen: "/images/products/img-apple-TV-4K.jpg",
             comentarios: [
                 {
                     usuario: "Maria Gonzales",
@@ -216,7 +216,7 @@ const data = {
         {
             nombre: "Apple HomePod mini",
             descripcion: "Sonido envolvente premium, Siri integrada y control total de tu casa con solo tu voz.",
-            imagen: "/images/products/img-apple-homePod-4K",
+            imagen: "/images/products/img-apple-homePod.jpg",
             comentarios: [
                 {
                     usuario: "Inesfish",
