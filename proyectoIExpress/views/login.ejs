@@ -11,9 +11,9 @@
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="..css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="/css/app.css">
 	
 
 <body>
@@ -31,18 +31,18 @@
 			<h2>
             <section class="col-12">
                 <form action="/users/perfil" method="get">
-                    <label for="email">Ingrese su Email</label>
-                    <input type="email" id="email" name="email" placeholder="Aqui va su email">
+                    <label for="email" class="form-label">Ingrese su Email</label>
+                    <input type="email" id="email" class="form-input" name="email" placeholder="Aqui va su email">
 
-                    <label for="password">Escirba su contraseña</label>
-                    <input type="password" id="password" name="password" placeholder="Aqui va su contraseña">
+                    <label for="password" class="form-label">Escirba su contraseña</label>
+                    <input type="password" id="password" class="form-input" name="password" placeholder="Aqui va su contraseña">
 
-                    <label for="recordarme">
-                        <input type="checkbox" id="recordarme" name="recrodarme">
+                    <label for="recordarme" class="form-label">
+                        <input type="checkbox" id="recordarme" class="form-input" name="recrodarme">
                         Recordarme
                     </label>
 
-                    <button type="submit">Iniciar Sesion</button>
+					<button type="submit"><a href="/users/perfil">Ingresa</a></button>
                 </form>
             </section> 
                 

@@ -4,7 +4,7 @@ const data = {
         email: "grodirguez@gmail.com",
         usuario: "grodriguez",
         contrasenia: "password",
-        fotoDePerfil: "/images/users/default-image.png"
+        fotoDePerfil: "/images/users/6422866.png"
 
     },
     productos: [

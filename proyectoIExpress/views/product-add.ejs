@@ -11,9 +11,9 @@
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="/css/app.css">
 	
 </head>
 
@@ -32,14 +32,14 @@
 			 <section>
 				<h2 class="col-12"> 
 					<form action="/users/perfil" method="GET">
-						<label for="image">Imagen</label>
-						<input type="file" id="image" name="image">
+						<label for="image" class="form-label">Imagen</label>
+						<input type="file" id="image" name="image" class="form-input">
 	
-						<label for="NDP">Nombre de producto: </label>
-						<input type="texto" id="NDP" name="NDP">
+						<label for="NDP" class="form-label">Nombre de producto: </label>
+						<input type="texto" id="NDP" name="NDP" class="form-input">
 	
-						<label for="DDP">Descripcion del Producto</label>
-						<input type="text" id="DDP" name="DDP">
+						<label for="DDP" class="form-label">Descripcion del Producto</label>
+						<input type="text" id="DDP" name="DDP" class="form-input">
 	
 						<button type="submit">Agregar Producto</button>
 					</form>

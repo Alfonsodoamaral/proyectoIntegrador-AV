@@ -11,9 +11,9 @@
 	<!-- Font Awesome Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 	<!-- Bootstrap Grid Stylesheet -->
-	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/css/bootstrap-grid.min.css">
 	<!-- Own Stylesheet -->
-	<link rel="stylesheet" href="../css/app.css">
+	<link rel="stylesheet" href="/css/app.css">
 	
 </head>
 
@@ -31,23 +31,23 @@
 			<!-- Show the "ultimos" products -->
 			<h2 class="col-12"> 
                 <form action="/users/perfil" method="GET">
-                    <label for="email">Email: </label>
-                    <input type="email" id="emial" name="email"  placeholder="Ingrese su emial">
+                    <label for="email" class="form-label">Email: </label>
+                    <input type="email" id="email name="email"  placeholder="Ingrese su email" class="form-input">
                    
-                    <label for="username">Usuario: </label>
-                    <input type="text" id="username" name="username" placeholder="Ingrese su usuario">
+                    <label for="username" class="form-label"> Usuario: </label>
+                    <input type="text" id="username" name="username" placeholder="Ingrese su usuario" class="form-input">
                     
-                    <label for="password">Ingrese su contraseña: </label>
-                    <input type="text" id="password" name="password" placeholder="Ingrese su contraseña">
+                    <label for="password" class="form-label" >Ingrese su contraseña: </label>
+                    <input type="text" id="password" name="password" placeholder="Ingrese su contraseña" class="form-input">
                     
-                    <label for="FDN">Fecha de Nacimiento: </label>
-                    <input type="date" id="FDN" name="FDN" placeholder="Ingrese si fecha de nacimiento">
+                    <label for="FDN" class="form-label" >Fecha de Nacimiento: </label>
+                    <input type="date" id="FDN" name="FDN" placeholder="Ingrese si fecha de nacimiento" class="form-input">
 
-                    <label for="NDD">Numero de Documento: </label>
-                    <input type="number" id="NDD" name="NDD" placeholder="Ingrese su numero de documento">
+                    <label for="NDD" class="form-label" >Numero de Documento: </label>
+                    <input type="number" id="NDD" name="NDD" placeholder="Ingrese su numero de documento" class="form-input">
 
-                    <label for="FDP">Foto de perfil: </label>
-                    <input type="text" id="FDP" name="FDP" >
+                    <label for="FDP" class="form-label" >Foto de perfil: </label>
+                    <input type="text" id="FDP" name="FDP" class="form-input" >
 
                     <button type="submit">Registrarse</button>
 					<p class="tenesCuenta"><a href="/users/login">Ahora Ingresa</a></p>
