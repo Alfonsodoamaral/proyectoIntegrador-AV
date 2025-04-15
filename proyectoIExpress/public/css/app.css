@@ -145,13 +145,48 @@ hr {
 }
 
 
+
+
 .left-navbar,
 .right-navbar {
   font-size: 1.5em;
   color: white; 
   font-family: 'Winky Rough', sans-serif;
 
+
+
 }
+.cerrar_sesion{
+  font-family: 'Winky Rough', sans-serif;
+}
+.crea_tu_cuenta:hover {
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+.ingresa:hover {
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+
+.cargar_productos:hover{
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+.todos_los_productos:hover{
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+.cerrar_sesion:hover{
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+.usuario_nombre:hover{
+  text-decoration: underline;
+  text-decoration-color: #007AFF;
+}
+
+
+
 
 .logout {
   background: transparent;
@@ -159,13 +194,17 @@ hr {
   cursor: pointer;
   font-size: 1em;
   color: white; 
- --base-font-family: 'Winky Rough', sans-serif;
+  font-family: 'Winky Rough', sans-serif;
   text-decoration: none;
 }
 
 .logout:hover {
-  color: #007AFF; 
+  color: #007AFF;
+
+
 }
+
+
 
 .left-navbar a,
 .right-navbar a {

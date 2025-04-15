@@ -53,23 +53,22 @@
 	
 			<nav class="main-navbar">
 				<ul class="left-navbar">
-					<li><a href="/">Todos los productos</a></li>
-					<li><a href="/products/agregar">Cargar productos</a></li> 
+					<li class="todos_los_productos"><a href="/">Todos los productos</a></li>
+					<li class="cargar_productos"><a href="/products/agregar">Cargar productos</a></li> 
 				</ul>
 	
 				<ul class="right-navbar">
-					<li><a href="/profile">
+					<li class="usuario_nombre"><a href="/users/perfil">
 							<%= usuario.nombre %> <i class="fas fa-user"></i> 
 						</a>
 					</li>
-						<li>
+					<li class="cerrar_sesion">
 							<form action="/" method="GET">
 								<button class="logout" type="submit">
-									Cerrar Sesion
-									 <i class="fas fa-sign-in-alt"></i>
+									Cerrar Sesion <i class="fas fa-sign-in-alt"></i>
 								</button>
 							</form>
-						</li> 
+					</li> 
 					
 				</ul>
 			</nav>

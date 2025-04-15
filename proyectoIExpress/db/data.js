@@ -3,6 +3,8 @@ const data = {
         nombre: "german",
         email: "grodirguez@gmail.com",
         usuario: "grodriguez",
+        fecha_nacimiento: 1960/12/23,
+        DNI: 43885324,
         contrasenia: "password",
         fotoDePerfil: "/images/users/6422866.png"
 
@@ -16,17 +18,17 @@ const data = {
                 {
                     usuario: "Alfonso123",
                     texto: "Increible para mis actividades de gimnasia, muy practicos y faciles de usar",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Germannnnn",
                     texto: "Excelente producto, bueno, bonito y grandioso en precio calidad",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Sebaperez",
                     texto: "Me esperaba mucho menos, de las mejores compras que he hecho",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
 
                 }
 
@@ -41,17 +43,17 @@ const data = {
                 {
                     usuario: "Serenita45",
                     texto: "Perfecta la computadora, rapida y liviana",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Tecnoboy2500",
                     texto: "Excelnte computadora para programar y jugar videojuegos",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MarcosProgramacion",
                     texto: "Soy programador y me sirvio muchisimo",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 }
 
             ]
@@ -66,17 +68,17 @@ const data = {
                 {
                     usuario: "Vicente2948",
                     texto: "¡Todo lo que nececitaba para el dia a dia!",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Saperoni2222",
                     texto: "Estoy facinado, muy util. Excellente compra",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MateoJames33",
                     texto: "Muy caro a mi parecer, solo sirve para el deporte",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
 
                 }
 
@@ -92,17 +94,17 @@ const data = {
                 {
                     usuario: "AgustinP",
                     texto: "¡Se ve increible! Me sirve para trabajar en cualquier lado",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
                 },
                 {
                     usuario: "MartaV",
                     texto: "Muy caro y no de buena calidad, lo estoy devolviendo, ¡No lo compres!",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
                 },
                 {
                     usuario: "AgusVerdes",
                     texto: "¡Exactamente lo que estaba buscando! Basta de hojas, cuidemos el planeta",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
                 },
 
             ]
@@ -117,17 +119,17 @@ const data = {
                 {
                     usuario: "Agustinuaia",
                     texto: "Son buenisimos y no muy caros",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Martasa V",
                     texto: "Son un poco incomodos",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Valeria_Gonzi",
                     texto: "Practicos y no se me pierden, justo lo que buscaba",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
 
                 }
 
@@ -143,17 +145,17 @@ const data = {
                 {
                     usuario: "Santino_perez99",
                     texto: "¡Se ve tentador! increible las tecnologias nuevas que salen cada dia",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "agustinahernandez",
                     texto: "Compre uno la semana pasada y es increible la variedad de cosas que se pueden hacer, ¡totalmente recomendado! ",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "FacundoJ",
                     texto: "Muy util y facil de usar",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
 
                 },
 
@@ -169,17 +171,17 @@ const data = {
                 {
                     usuario: "Jorge1988",
                     texto: "Pesimo servicio, me llego dos meses despues y no me funciona del todo bien",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MartinGonzales01",
                     texto: "Interesante el producto, pero un precio muy elevado para la utilidad que tiene",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "VicenteExperimentos",
                     texto: "Es innovador, pero innecesario, le doy un 5 de 10",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
                 }
 
             ]
@@ -194,17 +196,17 @@ const data = {
                 {
                     usuario: "Maria Gonzales",
                     texto: "Multifuncional, la mejor experiencia para mi y mis hijos",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Juan_02",
                     texto: "Muy practico, excellente producto",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MatiasCarrete",
                     texto: "Envio muy rapido y en perfecto estado. Gran compra.",
-                    fotoDePerfil: "images/users/deafult-image.png",
+                    fotoDePerfil: "images/users/default-image.png",
 
                 },
 
@@ -221,12 +223,12 @@ const data = {
                 {
                     usuario: "Inesfish",
                     texto: "Me genera siempre un gran ambiente en la casa, excellente producto",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Pedro_30",
                     texto: "Se me rompio a las 2 semanas, le tenia mayor expectativa",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "Sramirez",
@@ -248,17 +250,17 @@ const data = {
                 {
                     usuario: "Mariano_Fernandez",
                     texto: "Me funciono bien, ¡gran precio calidad!",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MaruuGonzales",
                     texto: "Desde ahora que ya no pierdo mas nada, ¡Me hacia falta! ",
-                    fotoDePerfil: "/images/users/deafult-image.png"
+                    fotoDePerfil: "/images/users/default-image.png"
                 },
                 {
                     usuario: "MatiasFernandez",
                     texto: "Excellente producto",
-                    fotoDePerfil: "/images/users/deafult-image.png",
+                    fotoDePerfil: "/images/users/default-image.png",
 
                 },
 
