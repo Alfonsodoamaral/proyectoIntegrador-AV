@@ -5,7 +5,7 @@ const usersControllers = require("../controllers/usersControllers")
 route.get("/perfil", usersControllers.index)
 route.get("/register", usersControllers.register)
 route.get("/login", usersControllers.login)
-route.post("/perfil/", usersControllers.processRegister)
+route.post("/processRegister", usersControllers.processRegister)
 route.post("/processLogin", usersControllers.processLogin); 
 
 

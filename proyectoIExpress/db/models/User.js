@@ -7,7 +7,7 @@ module.exports = function (sequelize, dataTypes) {
             primaryKey: true,
             type: dataTypes.INTEGER
         },
-        name: {
+        nombre: {
             type: dataTypes.STRING
         },
         email: {
@@ -28,7 +28,7 @@ module.exports = function (sequelize, dataTypes) {
         createdAt: {
             type: dataTypes.DATE  
         },
-        updateAt: {
+        updatedAt: {
             type: dataTypes.DATE  
         },
         deletedAt: {
@@ -38,7 +38,7 @@ module.exports = function (sequelize, dataTypes) {
     let config = {
         tableName: "usuarios",
         timestamps:true,
-        underscored: true,
+        underscored: false,
     }
     const User = sequelize.define(alias, cols, config);
 

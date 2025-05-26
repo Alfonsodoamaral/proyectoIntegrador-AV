@@ -1,7 +1,7 @@
 const data = require("../db/data")
 const db = require("../db/models")
 let bcrypt = require ("bcryptjs");
-const user = db.Users
+const user = db.User
 
 const profileController = {
     index: function(req, res){
@@ -21,19 +21,19 @@ const profileController = {
     },
     processRegister: function(req, res){
         let nombre = req.body.username
-        let NDD = req.body.NDD
-        let FDP = req.body.FDP
-        let fecha_nacimiento = req.body.FDN
+        let documento = req.body.documento
+        let perfil = req.body.perfil
+        let fecha_nacimiento = req.body.nacimiento
         let email = req.body.email
         let contra = req.body.password
         let contraEncript = bcrypt.hashSync(contra, 12)
         user.create({
-            name: nombre,
+            nombre: nombre,
             email: email,
             contrasenia: contraEncript,
             fecha: fecha_nacimiento,
-            dni: NDD,
-            fotoPerfil: FDP,
+            dni: documento,
+            fotoPerfil: perfil,
         })
 
         .then(function(){
@@ -46,18 +46,21 @@ const profileController = {
     processLogin: function(req, res){
         let emails = req.body.email
         let password = req.body.password
-        let recordame = req.body.recordame
+        let recordame = req.body.recordarme
 
         user.findOne({
             where: [{email: emails}]})
         .then(function(resultado){
-            if(bcrypt.compareSync(password, resultado.password) == true){
-                req.session.usuarioLogeado = resultado;
-                
+            if(resultado == undefined){
+                return res.send("No se encontro el email")
+            }
+            if(bcrypt.compareSync(password, resultado.contrasenia) == true){
+                console.log(resultado)
+                req.session.usuarioLogeado = "hola";
                 if (recordame == 'on') {
                     res.cookie('usuario', resultado.email, {maxAge: 1000 * 60 * 30})
                 }
-                res.redirect('/')
+                res.redirect('/users/perfil')
             
             } else{
                 res.send('la contrasenia es incorrecta')
