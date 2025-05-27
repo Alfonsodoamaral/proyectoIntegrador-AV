@@ -19,7 +19,7 @@ module.exports = function(sequelize, dataTypes){
         createdAt: {
             type: dataTypes.DATE  
         },
-        updateAt: {
+        updatedAt: {
             type: dataTypes.DATE  
         },
         deletedAt: {
@@ -30,10 +30,22 @@ module.exports = function(sequelize, dataTypes){
     let config = {
         tableName : "comentarios",
         timestamps:true,
-        underscored: true,
+        underscored: false,
     };
 
     const Comentario = sequelize.define(alias, cols, config);
+
+    Comentario.associate = function(models){
+        Comentario.belongsTo(models.Product, {
+            as: "Producto",
+            foreignKey: "id_producto"
+        });
+        Comentario.belongsTo(models.User, {
+            as: "User",
+            foreignKey: "id_usuario"
+        });
+    }
+
 
     return Comentario;
 }

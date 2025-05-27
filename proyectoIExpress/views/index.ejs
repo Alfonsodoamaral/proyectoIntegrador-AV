@@ -45,10 +45,10 @@
 						</figure>
 						<article class="product-box_data">
 							<h2>
-								<a href="/users/profile/" <%= productos[i].usuario_id %>> </a>
+								<a href="/users/profile/" <%= productos[i].User.email %>> </a>
 							</h2>
 							<p><%= productos[i].descripcion_producto %></p>
-							<p><%= productos[i].comentarios.length %></p>
+							<p><%= productos[i].Comentario.length : 0 %></p>
 						</article>
 					</a>
 				</section>
