@@ -7,6 +7,7 @@ route.get("/register", usersControllers.register)
 route.get("/login", usersControllers.login)
 route.post("/processRegister", usersControllers.processRegister)
 route.post("/processLogin", usersControllers.processLogin); 
+route.get("/logout", usersControllers.processLogout)
 
 
 

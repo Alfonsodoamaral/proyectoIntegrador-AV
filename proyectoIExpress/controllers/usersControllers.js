@@ -1,12 +1,11 @@
-const data = require("../db/data")
-const db = require("../db/models")
+
+const db = require("../database/models")
 let bcrypt = require ("bcryptjs");
 const user = db.User
-
 const profileController = {
     index: function(req, res){
-        let productos = data.productos
-        let usuario = data.usuario
+        let productos = db.Product
+        let usuario = db.User
         res.render("profile", {
             usuario: usuario,
             productos: productos
@@ -66,7 +65,14 @@ const profileController = {
                 res.send('la contrasenia es incorrecta')
             }
             })
+    },
+    processLogout: function(req,res){
+        res.session.destroy(()=>{
+            res.clearCookie("usuario")
+            res.redirect("/")
+        })
     }
+
 }
 
 

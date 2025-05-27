@@ -1,4 +1,4 @@
-const data = require("../db/data")
+
 
 const productController = {
     index: function(req, res){
@@ -18,7 +18,7 @@ const productController = {
     add_products: function(req, res){
         let usuario = data.usuario
         res.render("product-add", {usuario})
-}
+    }
 }
 
 

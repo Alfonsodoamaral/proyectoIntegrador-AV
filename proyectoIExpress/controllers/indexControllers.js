@@ -1,14 +1,46 @@
-const data = require("../db/data")
+const data = require("../database/models")
+const producto = data.Producto
+const op = data.Sequelize.Op
 
 
 const indexController = {
     index: function(req, res){
-        res.render("index", {
-            productos: data.productos
+        producto.findAll()
+        .then(function(productos){
+            res.render("index", {
+                productos: productos
+            })
         })
     },
     search_results: function(req, res){
-        res.render("search-result", {productos: data.productos})
+        let search = req.query.search
+        producto.findAll({
+            where: {
+                nombre_producto: {
+                    [op.like]: `%${search}%`
+                } }
+        })
+        .then(function(resultado){
+            if(resultado.length > 0){
+                res.render("search-results", {
+                    productos: resultado
+                })
+            } else {
+                res.render("search-results", {
+                    productos: [],
+                    mensaje: "No hay resultados para su criterio de busqueda"
+                })
+            }
+        })
+        .catch(function(error){
+            console.log(error)
+            res.render("search-results", {
+                productos: [],
+                mensaje: "Error al buscar productos"
+            })
+        })
+
+        
     }
 }
 
