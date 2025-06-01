@@ -2,14 +2,20 @@
 const db = require("../database/models")
 let bcrypt = require ("bcryptjs");
 const user = db.User
+const product = db.Product
 const profileController = {
     index: function(req, res){
-        let productos = db.Product
-        let usuario = db.User
-        res.render("profile", {
-            usuario: usuario,
-            productos: productos
-
+        product.findAll({
+            include: [
+                {association: "User"},
+                {association: "Comentario"}
+            ]
+        })
+        .then(function(productos){
+            res.render("profile", {
+                usuario: productos,               
+                productos: producto
+            })
         })
     },
     login: function(req, res){

@@ -17,36 +17,6 @@ const indexController = {
             })
         })
     },
-    search_results: function(req, res){
-        let search = req.query.search
-        producto.findAll({
-            where: {
-                nombre_producto: {
-                    [op.like]: `%${search}%`
-                } }
-        })
-        .then(function(resultado){
-            if(resultado.length > 0){
-                res.render("search-results", {
-                    productos: resultado
-                })
-            } else {
-                res.render("search-results", {
-                    productos: [],
-                    mensaje: "No hay resultados para su criterio de busqueda"
-                })
-            }
-        })
-        .catch(function(error){
-            console.log(error)
-            res.render("search-results", {
-                productos: [],
-                mensaje: "Error al buscar productos"
-            })
-        })
-
-        
-    }
 }
 
 module.exports = indexController

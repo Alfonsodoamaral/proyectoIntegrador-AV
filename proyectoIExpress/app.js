@@ -31,7 +31,7 @@ app.use(session({
 
 app.use("/", indexRouter)
 app.use("/users", usersRouter)
-app.use("/products", productRouter)
+app.use("/product", productRouter)
 
 
 

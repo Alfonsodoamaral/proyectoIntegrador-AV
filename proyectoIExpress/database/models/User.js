@@ -28,7 +28,7 @@ module.exports = function (sequelize, dataTypes) {
         createdAt: {
             type: dataTypes.DATE  
         },
-        updateddAt: {
+        updatedAt: {
             type: dataTypes.DATE  
         },
         deletedAt: {
@@ -43,7 +43,7 @@ module.exports = function (sequelize, dataTypes) {
     const User = sequelize.define(alias, cols, config);
 
     User.associate = function(models){
-        User.hasMany(models.Product, {
+        User.hasMany(models.Producto, {
             as: "Producto",
             foreignKey: "usuario_id"
         });
