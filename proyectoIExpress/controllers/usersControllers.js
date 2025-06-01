@@ -2,7 +2,7 @@
 const db = require("../database/models")
 let bcrypt = require ("bcryptjs");
 const user = db.User
-const product = db.Product
+const product = db.Producto
 const profileController = {
     index: function(req, res){
         product.findAll({
@@ -14,7 +14,7 @@ const profileController = {
         .then(function(productos){
             res.render("profile", {
                 usuario: productos,               
-                productos: producto
+                productos: productos
             })
         })
     },
