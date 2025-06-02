@@ -21,16 +21,14 @@ const productController = {
             ]
         })
         .then(function(producto){
+            
         if(!producto) {
             return res.redirect('/'); 
         }
         if(!req.session.usuarioLogeado){
-            return res.render("product", { producto: producto, usuario: null });
+            return res.redirect('/'); 
         }
-        let usuario = req.session.usuarioLogeado;
-        if(usuario.id == producto.usuario_id){ 
-            return res.render("product", { producto: producto, usuario: usuario });
-        }
+        res.render("product", { producto: producto });
     })
     },
     add_products: function(req, res){
