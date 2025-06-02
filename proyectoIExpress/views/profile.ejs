@@ -67,17 +67,17 @@
 				<% for(let i=0; i < usuario.Producto.length; i++) { %>
 					<div class="col-12 col-sm-6 col-lg-3">
 					<section class="product-box">
-						<a href="/products/detalle/<%= usuario.Producto[i].id %>">
+						<a href="/product/detalle/<%= usuario.Producto[i].id %>">
 							<figure class="product-box_image">
-								<img src="<%= usuario.Producto[i].imagen %>" alt="<%= usuario.Producto[i].nombre %>">
+								<img src="<%= usuario.Producto[i].nombre_foto_producto %>" alt="<%= usuario.Producto[i].nombre_producto %>">
 							</figure>
 							<article class="product-box_data">
-								<a href="/products/detalle/<%= usuario.producto[i].id %>">
-									<h2><%= usuario.productos[i].nombre %></h2>
+								<a href="/product/detalle/<%= usuario.Producto[i].id %>">
+									<h2><%= usuario.Producto[i].nombre_producto %></h2>
 								</a>
 							   
-								<p><%= usuario.producto[i].descripcion_producto %></p>
-								<p><%= usuario.producto[i].Comentario.length %></p>
+								<p><%= usuario.Producto[i].descripcion_producto %></p>
+								<p><%= usuario.Producto[i].Comentario.length %></p>
 								<p> <strong><%= usuario.nombre %></strong></p>
 							</article>
 						</a>

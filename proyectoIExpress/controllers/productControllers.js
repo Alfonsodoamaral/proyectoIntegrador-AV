@@ -21,22 +21,17 @@ const productController = {
             ]
         })
         .then(function(producto){
-            let comentarios = producto.Comentario;
-
-            for (let i = 0; i < Comentario.length - 1; i++) {
-                for (let k = 0; k < Comentario.length - 1 - i; k++) {
-                    if (Coemntario[k].createdAt < Comentario[k + 1].createdAt) {
-                        let masViejo = Comentario[k];
-                        Comentario[k] = Comentario[k + 1]; 
-                        Comentario[k + 1] = masViejo;
-                }
-            }
+        if(!producto) {
+            return res.redirect('/'); 
         }
-        
-        producto.Comentario = Comentario;
-
-        return res.render("product", { producto: producto });
-        })
+        if(!req.session.usuarioLogeado){
+            return res.render("product", { producto: producto, usuario: null });
+        }
+        let usuario = req.session.usuarioLogeado;
+        if(usuario.id == producto.usuario_id){ 
+            return res.render("product", { producto: producto, usuario: usuario });
+        }
+    })
     },
     add_products: function(req, res){
         let usuario = data.usuario
@@ -47,7 +42,7 @@ const productController = {
             nombre_foto_producto: req.body.image,
             nombre_producto: req.body.nombre_producto, 
             descripcion_producto: req.body.descripcion_producto,
-            usuario_id: req.session.usuarioLogueado.id
+            usuario_id: req.session.usuarioLogeado.id
         })
         .then(function(producto){
             return res.redirect('/users/perfil'); 
@@ -65,7 +60,20 @@ const productController = {
             where: {
                 nombre_producto: {
                     [op.like]: `%${search.toLowerCase()}%`
-                } }
+                } },
+            include: [
+                {
+                    association: "Comentario", 
+                    include: [
+                        {
+                            association: "User" 
+                        }
+                    ]
+                },
+                {
+                    association: "User"
+                }
+            ]
         })
         .then(function(resultado){
             if(resultado.length > 0){

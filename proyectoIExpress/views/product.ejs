@@ -27,7 +27,7 @@
 	<!-- product detail -->
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title"><%= nombre %></h2> 
+			<h2 class="products-title"><%= producto.User.nombre %></h2> 
 			<p class="product-detail-description">
 				<a href="product/agregar">Editar</a>
 			</p>
@@ -35,7 +35,7 @@
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<a href="/users/profile/<%= producto.usuario.id %>"><%= producto.usuario.nombre %></a>
+					<a href="/users/profile/<%= producto.User.id %>"><%= producto.User.nombre %></a>
 					<img src="<%= producto.nombre_foto_producto %>" alt="<%= producto.nombre_foto_producto %>" class="product-detail-img">
 					<p class="product-detail-description">
                         <%= producto.descripcion_producto %>
@@ -48,8 +48,8 @@
 							<img src="<%= producto.Comentario[i].User.fotoPerfil %>" alt="">
 							<div class="data">
 								<p class="user">
-								<strong><a href="/users/profile/<%= producto.Comentario[i].usuario.id %>"><%= producto.Comentario[i].usuario.nombre %></a></strong>
-								<%= producto.Comentario[i].texto %>
+								<strong><a href="/users/profile/<%= producto.Comentario[i].User.id %>"><%= producto.Comentario[i].User.nombre %></a></strong>
+								<%= producto.Comentario[i].texto_comentario %>
 							</p>
 							</div>
 						</article>

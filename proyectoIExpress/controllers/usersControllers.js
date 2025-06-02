@@ -122,10 +122,10 @@ const profileController = {
             })
     },
     processLogout: function(req,res){
-        res.session.destroy(()=>{
+            req.session.destroy();
             res.clearCookie("usuario")
             res.redirect("/")
-        })
+        
     }
 
 }

@@ -38,14 +38,14 @@
 			<% for(let i=0; i < productos.length; i++) { %>
 				<div class="col-12 col-sm-6 col-lg-3">
 				<section class="product-box">
-					<a href="/product/search/<%= i %>">
+					<a href="/product/search/<%= productos.id  %>">
 						<figure class="product-box_image">
 							<img src="<%= productos[i].nombre_foto_producto %>" alt="<%= productos[i].nombre_producto%>">
 						</figure>
 						<article class="product-box_data">
 							<h2><%= productos[i].nombre_producto%></h2>
 							<p><%= productos[i].descripcion_producto %></p>
-							<p><%= productos[i].comentarios.length %></p>
+							<p><%= productos[i].Comentario.length %></p>
 						</article>
 					</a>
 				</section>
