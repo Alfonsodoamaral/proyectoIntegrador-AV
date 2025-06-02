@@ -3,23 +3,68 @@ const db = require("../database/models")
 let bcrypt = require ("bcryptjs");
 const user = db.User
 const product = db.Producto
+
 const profileController = {
-    index: function(req, res){
-        product.findAll({
+    login: function(req, res){
+            if(req.session.usuarioLogueado){
+                return res.redirect("/users/profile")
+            }
+            return res.render("login")
+    },
+    profile: function(req, res){
+        if(!req.session.usuarioLogeado){
+            return res.redirect('/users/login');
+        }
+        let userId = req.session.usuarioLogeado.id;
+
+        user.findByPk(userId, {
             include: [
-                {association: "User"},
-                {association: "Comentario"}
+                {
+                    association: "Producto", 
+                    include: [
+                        {
+                            association: "Comentario" 
+                        }
+                    ]
+                },
+                {
+                    association: "Comentario"
+                }
             ]
         })
-        .then(function(productos){
-            res.render("profile", {
-                usuario: productos,               
-                productos: productos
-            })
+        .then(function(usuario){
+            if(!usuario) {
+                return res.redirect('/users/login');
+            }
+            res.render("profile", { usuario: usuario });
         })
     },
-    login: function(req, res){
-        res.render("login")
+
+    profile_id: function(req, res){
+        let usuario_id= req.params.id;
+ 
+ 
+        user.findByPk(usuario_id, {
+            include: [
+                {
+                    association: "Producto",
+                    include: [
+                        {
+                            association: "Comentario" 
+                        }
+                    ]
+                },
+                {
+                    association: "Comentario" 
+                }
+            ]
+        })
+        .then(function(usuario){
+            if(!usuario) {
+                return res.send("Usuario no encontrado");
+            }
+            res.render("profile", { usuario: usuario });
+        })
     },
     register: function(req, res){
         res.render("register")
@@ -60,8 +105,12 @@ const profileController = {
                 return res.send("No se encontro el email")
             }
             if(bcrypt.compareSync(password, resultado.contrasenia) == true){
-                console.log(resultado)
-                req.session.usuarioLogeado = "hola";
+                
+              req.session.usuarioLogeado = {
+                id: resultado.id,
+                nombre: resultado.nombre,
+                email: resultado.email
+}
                 if (recordame == 'on') {
                     res.cookie('usuario', resultado.email, {maxAge: 1000 * 60 * 30})
                 }

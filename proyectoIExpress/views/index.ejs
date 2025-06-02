@@ -18,7 +18,12 @@
 </head>
 <body>
 	<!-- Header -->
-	<%- include("./partials/headerNoLogeadoi") %>
+	<% if(locals.usuario != undefined){ %>
+		<%- include('./partials/headerLogueado') %>
+	<% } %>
+	<% if(locals.usuario == undefined){ %>
+		<%- include('./partials/headerNoLogeadoi') %>
+	<% } %>
 	<!-- /Header -->
 	
 	<!-- Banner -->
@@ -44,11 +49,14 @@
 							<img src="<%= productos[i].nombre_foto_producto %>" alt="<%= productos[i].nombre_producto%>">
 						</figure>
 						<article class="product-box_data">
-							<h2>
-								<a href="/users/profile/"><%= productos[i].User.email %></a>
-							</h2>
-							<p><%= productos[i].descripcion_producto %></p>
-							<p><%= productos[i].Comentario.length %></p>
+							<a href="/products/detalle/ <%= productos[i].id %>" >
+								<h2> <%= productos[i].nombre %></h2>
+								<p><%= productos[i].descripcion %></p>
+								<p>Comentarios: <%= productos[i].comentarios.length %></p>
+								<a href="/users/profile/<%= productos[i].usuario.id %>"> 
+									<p>Vendedor: <strong><%= productos[i].usuario.nombre %></strong></p>
+								</a>
+							</a>
 						</article>
 					</a>
 				</section>

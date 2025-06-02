@@ -28,12 +28,26 @@ app.use(session({
   saveUninitialized: true
 
 }))
-
+app.use(function(req, res, next) {
+    if (req.session && req.session.usuarioLogeado) {
+        res.locals.usuario = req.session.usuarioLogeado;
+    } else {
+        res.locals.usuario = null;
+    }
+    next();
+});
 app.use("/", indexRouter)
 app.use("/users", usersRouter)
 app.use("/product", productRouter)
 
-
+app.use(function(req, res, next) {
+  if (req.session && req.session.usuarioLogeado !== undefined) {
+    res.locals.usuario = req.session.usuarioLogeado;
+    
+  }
+  console.log(res.locals)
+  return next();
+});
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
