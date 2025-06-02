@@ -38,7 +38,7 @@ app.use(function(req, res, next) {
 });
 app.use("/", indexRouter)
 app.use("/users", usersRouter)
-app.use("/product", productRouter)
+app.use("/products", productRouter)
 
 app.use(function(req, res, next) {
   if (req.session && req.session.usuarioLogeado !== undefined) {

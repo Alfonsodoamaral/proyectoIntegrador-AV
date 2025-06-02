@@ -19,7 +19,13 @@
 
 <body>
 	<!-- Header -->
-	
+	<% if(locals.usuario != undefined){ %>
+		<%- include('./partials/headerLogeado') %>
+	<% } %>
+	<% if(locals.usuario == undefined){ %>
+		<%- include('./partials/headerNoLogeadoi') %>
+		
+	<% } %>
 	<!-- /Header -->
 
 	<!-- Novedades -->
@@ -31,15 +37,15 @@
 			<!-- Show the "ultimos" products -->
 			 <section>
 				<h2 class="col-12"> 
-					<form action="/products/add" method="POST">
+					<form action="/products/agregar" method="POST">
 						<label for="image" class="form-label">Imagen</label>
 						<input type="file" id="image" name="image" class="form-input">
 	
 						<label for="NDP" class="form-label">Nombre de producto: </label>
-						<input type="texto" id="NDP" name="NDP" class="form-input">
+						<input type="texto" id="NDP" name="nombre_producto" class="form-input">
 	
 						<label for="DDP" class="form-label">Descripcion del Producto</label>
-						<input type="text" id="DDP" name="DDP" class="form-input">
+						<input type="text" id="DDP" name="descripcion_producto" class="form-input">
 	
 						<button type="submit">Agregar Producto</button>
 					</form>

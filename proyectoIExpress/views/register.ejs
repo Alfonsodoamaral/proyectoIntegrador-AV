@@ -19,7 +19,12 @@
 
 <body>
 	<!-- Header -->
-	<%- include('./partials/headerNoLogeadoi') %>
+		<% if(locals.usuario != undefined){ %>
+		<%- include('./partials/headerLogeado') %>
+	<% } %>
+	<% if(locals.usuario == undefined){ %>
+		<%- include('./partials/headerNoLogeadoi') %>
+	<% } %>
 	<!-- /Header -->
 
 	<!-- Novedades -->

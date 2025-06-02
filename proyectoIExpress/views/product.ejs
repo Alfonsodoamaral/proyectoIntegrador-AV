@@ -17,7 +17,12 @@
 </head>
 <body>
 	<!-- Header -->
-	<%- include('./partials/headerNoLogeadoi') %>
+	<% if(locals.usuario != undefined){ %>
+		<%- include('./partials/headerLogueado') %>
+	<% } %>
+	<% if(locals.usuario == undefined){ %>
+		<%- include('./partials/headerNoLogeadoi') %>
+	<% } %>
 	<!-- /Header -->
 	<!-- product detail -->
 	<div class="container products-wrapper">
@@ -30,32 +35,28 @@
 		<div class="product-detail">
 			<div class="row">
 				<article class="col-12 col-lg-8 product-detail-info">
-					<img src="<%= imagen %>" alt="<%= nombre %>" class="product-detail-img">
+					<a href="/users/profile/<%= producto.usuario.id %>"><%= producto.usuario.nombre %></a>
+					<img src="<%= producto.nombre_foto_producto %>" alt="<%= producto.nombre_foto_producto %>" class="product-detail-img">
 					<p class="product-detail-description">
-                        <%= descripcion %>
+                        <%= producto.descripcion_producto %>
 					</p>
 				</article>
 				<div class="col-12 col-lg-4">
 					<section class="comments">
-                        <% for(i = 0; i < comentarios.length; i++){ %>
+                        <% for(i = 0; i < producto.Comentario.length; i++){ %>
 						<article>
+							<img src="<%= producto.Comentario[i].User.fotoPerfil %>" alt="">
 							<div class="data">
 								<p class="user">
-								<strong> 
-									<a href="/users/perfil">
-									<img src="<%= comentarios[i].fotoDePerfil %>" alt="">
-									<%= comentarios[i].usuario %>
-                                     </a> 
-								</strong>
-								
-									<%= comentarios[i].texto %>
-								</p>
+								<strong><a href="/users/profile/<%= producto.Comentario[i].usuario.id %>"><%= producto.Comentario[i].usuario.nombre %></a></strong>
+								<%= producto.Comentario[i].texto %>
+							</p>
 							</div>
 						</article>
                         <% } %>
 					</section>
-					<form class="form" action="" method="POST">
-						<input class="form-input" type="text" value="" placeholder="Agregar comentario">
+					<form class="form" action="/producto/nuevoComentario/<%= producto.id %>" method="POST">
+						<input class="form-input" type="text" name="comenta" value="" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
 					</form>
 					<hr>

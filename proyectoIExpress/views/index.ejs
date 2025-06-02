@@ -19,7 +19,7 @@
 <body>
 	<!-- Header -->
 	<% if(locals.usuario != undefined){ %>
-		<%- include('./partials/headerLogueado') %>
+		<%- include('./partials/headerLogeado') %>
 	<% } %>
 	<% if(locals.usuario == undefined){ %>
 		<%- include('./partials/headerNoLogeadoi') %>
@@ -51,10 +51,10 @@
 						<article class="product-box_data">
 							<a href="/products/detalle/ <%= productos[i].id %>" >
 								<h2> <%= productos[i].nombre %></h2>
-								<p><%= productos[i].descripcion %></p>
-								<p>Comentarios: <%= productos[i].comentarios.length %></p>
-								<a href="/users/profile/<%= productos[i].usuario.id %>"> 
-									<p>Vendedor: <strong><%= productos[i].usuario.nombre %></strong></p>
+								<p><%= productos[i].descripcion_producto %></p>
+								<p>Comentarios: <%= productos[i].Comentario.length %></p>
+								<a href="/users/profile/<%= productos[i].User.id %>"> 
+									<p>Vendedor: <strong><%= productos[i].User.nombre %></strong></p>
 								</a>
 							</a>
 						</article>
