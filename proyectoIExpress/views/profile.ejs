@@ -46,9 +46,9 @@
 					<ul class="">
 						<!-- Preguntar que va aca -->
 						 <li><%=usuario.email %></li>
-						<li><%=usuario.Producto.length %>p roductos</li>
+						<li><%=usuario.Producto.length %> productos</li>
 						<li>200 seguidores</li>
-						<li> <%= usuario.Comentario.length %>Comentarios</li>
+						<li> <%= usuario.Comentario.length %> Comentarios</li>
 					</ul>
 				</div>
 			</div>
@@ -67,12 +67,12 @@
 				<% for(let i=0; i < usuario.Producto.length; i++) { %>
 					<div class="col-12 col-sm-6 col-lg-3">
 					<section class="product-box">
-						<a href="/product/detalle/<%= usuario.Producto[i].id %>">
+						<a href="/products/detalle/<%= usuario.Producto[i].id %>">
 							<figure class="product-box_image">
 								<img src="<%= usuario.Producto[i].nombre_foto_producto %>" alt="<%= usuario.Producto[i].nombre_producto %>">
 							</figure>
 							<article class="product-box_data">
-								<a href="/product/detalle/<%= usuario.Producto[i].id %>">
+								<a href="/products/detalle/<%= usuario.Producto[i].id %>">
 									<h2><%= usuario.Producto[i].nombre_producto %></h2>
 								</a>
 							   

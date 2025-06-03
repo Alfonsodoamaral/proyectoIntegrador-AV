@@ -25,9 +25,6 @@ const productController = {
         if(!producto) {
             return res.redirect('/'); 
         }
-        if(!req.session.usuarioLogeado){
-            return res.redirect('/'); 
-        }
         res.render("product", { producto: producto });
     })
     },
@@ -94,6 +91,31 @@ const productController = {
         })
 
         
+    },
+    procesarComentario: function(req, res){
+        
+        console.log("entre");
+        console.log(req.session.usuarioLogeado);
+        console.log(req.body);
+        
+        
+        let id_producto = req.body.id_producto;
+        let comentario = req.body.comenta;
+        let usuario_id = req.session.usuarioLogeado.id;
+
+        data.Comentario.create({
+            texto_comentario: comentario,
+            id_producto: id_producto,
+            id_usuario: usuario_id
+        })
+        .then(function(resultados){
+            return res.redirect(`/products/detalle/${id_producto}`); 
+        })
+        .catch(function(error){
+            console.log(error);
+           
+        });
     }
+
 }
 module.exports = productController;

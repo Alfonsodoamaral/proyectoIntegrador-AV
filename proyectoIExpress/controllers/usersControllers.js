@@ -77,6 +77,15 @@ const profileController = {
         let email = req.body.email
         let contra = req.body.password
         let contraEncript = bcrypt.hashSync(contra, 12)
+        if (contra.length < 3) {
+            return res.send("la contraseña debe tener al menos 3 caracteres.");
+        }
+        user.findOne({ where: { email: email } })
+        .then(function(resultado){
+            if (resultado) {
+                return res.send("El email ya está registrado." );
+            }
+        })
         user.create({
             nombre: nombre,
             email: email,
@@ -85,7 +94,6 @@ const profileController = {
             dni: documento,
             fotoPerfil: perfil,
         })
-
         .then(function(){
             res.redirect("/")
         })

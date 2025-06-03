@@ -27,7 +27,7 @@
 	<!-- product detail -->
 	<div class="container products-wrapper">
 		<div class="d-flex align-items-center">
-			<h2 class="products-title"><%= producto.User.nombre %></h2> 
+			<h2 class="products-title">Vendedor: <%= producto.User.nombre %></h2> 
 			<p class="product-detail-description">
 				<a href="product/agregar">Editar</a>
 			</p>
@@ -48,16 +48,31 @@
 							<img src="<%= producto.Comentario[i].User.fotoPerfil %>" alt="">
 							<div class="data">
 								<p class="user">
-								<strong><a href="/users/profile/<%= producto.Comentario[i].User.id %>"><%= producto.Comentario[i].User.nombre %></a></strong>
+								<strong><a href="/users/perfil/<%= producto.Comentario[i].User.id %>"><%= producto.Comentario[i].User.nombre %></a></strong>
 								<%= producto.Comentario[i].texto_comentario %>
 							</p>
 							</div>
 						</article>
                         <% } %>
 					</section>
-					<form class="form" action="/producto/nuevoComentario/<%= producto.id %>" method="POST">
+					<% if(locals.usuario != undefined){ %>
+						<form action="/products/comentario" method="POST">
+						<label for="comentario">Ingrese un comentario</label>
+						<input type="text" name="comentario" value="" hidden>
+						<input type="hidden" name="id_producto" value="<%= producto.id %>">
+						<input type="hidden" name="id_usuario" value="<%= locals.usuario.id %>">
 						<input class="form-input" type="text" name="comenta" value="" placeholder="Agregar comentario">
 						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
+					</form>
+					<% } %>
+					<% if(locals.usuario == undefined){ %>
+						<form action="/">
+						<input class="form-input" type="text" name="comenta" value="" placeholder="Agregar comentario">
+						<button type="submit" class="buy-now-button">AGREGAR COMENTARIO</button>
+					</form>	
+					<% } %>
+
+
 					</form>
 					<hr>
 				</div>

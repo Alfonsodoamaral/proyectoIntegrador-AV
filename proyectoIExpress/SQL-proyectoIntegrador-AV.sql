@@ -42,7 +42,7 @@ FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
 );
 
 INSERT INTO usuarios (email, nombre, contrasenia, fecha, dni, fotoPerfil)
-VALUES ('Alfonso123@gmail.com', "Alfonso" 'alfon2006', '2006-08-02', 47394092, '/images/users/default-image.png'),
+VALUES ('Alfonso123@gmail.com', "Alfonso", 'alfon2006', '2006-08-02', 47394092, '/images/users/default-image.png'),
 	   ('german@gmail.com', "German", 'Casa282', '1984-10-08', 32928367, '/images/users/default-image.png'),
        ('Serenita45@gmail.com', "Serentia", 'Eljardinrosado', '2008-12-30', 49229034, '/images/users/default-image.png'),
 	   ('tecnoboy2500@gmail.com', "Bautista", 'Cattaneo55', '2000-07-30', 42778290, '/images/users/default-image.png'),
